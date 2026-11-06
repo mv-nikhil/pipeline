@@ -25,6 +25,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: artifact list
-      run: ls -l java/*.jar
+      run: ls -l target/*.jar
 
     

@@ -26,5 +26,10 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: artifact list
       run: ls -l target/*.jar
-
+    - name: Upload JAR
+      uses: actions/upload-artifact@v4
+      with:
+       name: java-cicd-app
+       path: target/*.jar
+  
     

@@ -1,9 +1,10 @@
 
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -18,7 +19,6 @@
         <junit.version>5.10.2</junit.version>
     </properties>
 
-    <!-- Dependencies -->
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -28,7 +28,6 @@
         </dependency>
     </dependencies>
 
-    <!-- GitHub Packages Repository -->
     <distributionManagement>
         <repository>
             <id>github</id>
@@ -40,21 +39,18 @@
     <build>
         <plugins>
 
-            <!-- BUILD -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
             </plugin>
 
-            <!-- TEST -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
             </plugin>
 
-            <!-- PACKAGE -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -68,7 +64,6 @@
                 </configuration>
             </plugin>
 
-            <!-- DEPLOY -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
@@ -80,8 +75,6 @@
 
 </project>
 
-
-</project>
 
 
 

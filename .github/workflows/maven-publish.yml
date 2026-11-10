@@ -9,7 +9,7 @@ jobs:
   # BUILD STAGE
   build:
     name: Build
-    runs-on:my
+    runs-on: my
 
     permissions:
       contents: read

@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4 # Action to clone your repository
 
-      # Step to configure AWS credentials using the IAM Role and OIDC
+                # Step to configure AWS credentials using the IAM Role and OIDC
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
